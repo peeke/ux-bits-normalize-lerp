@@ -1,0 +1,12 @@
+.component {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+
+  & > * {
+    width: 400px;
+    height: 400px;
+  }
+}
