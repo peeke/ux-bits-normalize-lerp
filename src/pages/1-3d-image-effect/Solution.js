@@ -10,8 +10,8 @@ export function Solution() {
   }))
 
   useMousePositionCallback(({ x, y }) => {
-    const rotX = 22.5 - (45 / window.innerHeight) * y
-    const rotY = (45 / window.innerWidth) * x - 22.5
+    const rotX = 22.5 - 45 * (y / window.innerHeight)
+    const rotY = 45 * (x / window.innerWidth) - 22.5
     setSpring({ rotX, rotY })
   })
 

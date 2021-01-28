@@ -1,0 +1,15 @@
+.component {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: grid;
+
+  & > .container {
+    width: 400px;
+    height: 400px;
+    margin: 100px;
+  }
+}
+
+.container {
+  perspective: 1000px;
+}

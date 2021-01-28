@@ -13,6 +13,8 @@ Index.routes = {
     if (path === '/') return { status: 200 }
     if (path === '/1-3d-image-effect') return { status: 200 }
     if (path === '/1-3d-image-effect-solution') return { status: 200 }
+    if (path === '/2-3d-image-effect') return { status: 200 }
+    if (path === '/2-3d-image-effect-solution') return { status: 200 }
     else return { status: 404, data: { notFound: true } }
   }
 }
