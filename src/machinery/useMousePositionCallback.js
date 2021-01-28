@@ -10,7 +10,7 @@ export function useMousePositionCallback(callback) {
       return () => window.removeEventListener('mousemove', handleMouseMove)
 
       function handleMouseMove(e) {
-        callbackRef.current({
+        callbackRef.current && callbackRef.current({
           x: e.clientX,
           y: e.clientY
         })

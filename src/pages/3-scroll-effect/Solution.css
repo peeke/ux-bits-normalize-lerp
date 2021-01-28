@@ -1,0 +1,17 @@
+.component {
+  position: relative;
+  height: 500vh !important;
+  display: flex;
+  justify-content: center;
+
+  & > .image {
+    position: fixed;
+    top: 0;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.container {
+  perspective: 1000px;
+}
